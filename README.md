@@ -30,3 +30,11 @@ Sort the elements based on the unit place digits (X=0).
 - Average	O(n+k)
 - Space Complexity	O(max)
 - Stability	Yes
+
+
+## Radix Sort Applications
+
+Radix sort is implemented in
+
+- DC3 algorithm (Kärkkäinen-Sanders-Burkhardt) while making a suffix array.
+- places where there are numbers in large ranges.
