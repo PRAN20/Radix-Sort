@@ -22,24 +22,11 @@ Sort the elements based on the unit place digits (X=0).
 
 <img width="508" alt="image" src="https://user-images.githubusercontent.com/65455865/141652454-2f5c6e9c-cd21-4b0d-b21f-b777f89c5cf9.png">
 
+# Radix Sort Complexity
 
-
-## RADIX ALGORITHM
-
-radixSort(array)
-  d <- maximum number of digits in the largest element
-  create d buckets of size 0-9
-  for i <- 0 to d
-    sort the elements according to ith place digits using countingSort
-
-countingSort(array, d)
-  max <- find largest element among dth place elements
-  initialize count array with all zeros
-  for j <- 0 to size
-    find the total count of each unique digit in dth place of elements and
-    store the count at jth index in count array
-  for i <- 1 to max
-    find the cumulative sum and store it in count array itself
-  for j <- size down to 1
-    restore the elements to array
-    decrease count of each element restored by 1
+## Time Complexity	 
+- Best	O(n+k)
+- Worst	O(n+k)
+- Average	O(n+k)
+- Space Complexity	O(max)
+- Stability	Yes
